@@ -38,8 +38,12 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=mako lpj=
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01600000
 
 # Try to build the kernel
-TARGET_KERNEL_SOURCE := kernel/google/msm
-TARGET_KERNEL_CONFIG := cyanogen_mako_defconfig
+#TARGET_KERNEL_SOURCE := kernel/google/msm
+#TARGET_KERNEL_CONFIG := cyanogen_mako_defconfig
+
+TARGET_KERNEL_UBUNTU := true
+TARGET_KERNEL_UBUNTU_META := linux-image-mako
+TARGET_KERNEL_UBUNTU_SERIES := vivid
 
 BOARD_USES_ALSA_AUDIO:= true
 BOARD_USES_LEGACY_ALSA_AUDIO:= false
